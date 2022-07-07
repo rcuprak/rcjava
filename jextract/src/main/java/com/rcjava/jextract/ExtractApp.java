@@ -12,12 +12,12 @@ import java.util.concurrent.Callable;
  */
 @CommandLine.Command(description = "Extracts a source file from a jar file",
         name = "jextract", mixinStandardHelpOptions = true, version = "jextract 0.1")
-public class ExtractApp implements Callable<Integer> {
+public class    ExtractApp implements Callable<Integer> {
 
     /**
      * JAR file we want to extract a class from
      */
-    @CommandLine.Parameters(arity="1",description = "Class to be extracted")
+    @CommandLine.Parameters(arity="1",description = "Fully qualifid class name")
     private String clazz;
 
     /**
@@ -29,7 +29,7 @@ public class ExtractApp implements Callable<Integer> {
     /**
      * Directory where file is to be extracted
      */
-    @CommandLine.Parameters(arity="3",description = "JAR File")
+    @CommandLine.Parameters(arity="3",description = "Location where the class file will be dumped.")
     private File dir;
 
     /**

@@ -37,7 +37,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.rcjava.jinsert.Insert</mainClass>
+                            <mainClass>com.rcjava.jinsert.InsertApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
